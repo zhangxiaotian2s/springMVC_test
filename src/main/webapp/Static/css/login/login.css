@@ -1,0 +1,33 @@
+.banner{
+    width: 7.0rem;
+    margin:0.2rem auto;
+}
+.text-input{
+    margin: 0.2rem auto;
+    width: 7.0rem;
+
+
+}
+.text-input input{
+    border:none;
+    height: 1rem;
+    width: 100%;
+    outline: none;
+    text-indent: 0.5rem;
+    font-size: 0.3rem;
+}
+.loginBtn{
+    width: 6.0rem;
+    margin: 0.2rem auto;
+    height: 1rem;
+    background: #c0602b;
+}
+.loginBtn button{
+    background: none;
+    border: none;
+    width: 6rem;
+    line-height: 1rem;
+    font-size:0.38rem;
+    color: #FFFFFF;
+
+}

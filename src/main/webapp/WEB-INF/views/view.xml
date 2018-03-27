@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- 根模板 -->
+    <definition name="mainDefault" template="/WEB-INF/views/template/main.jsp">
+        <put-attribute name="title" value="java 学习 基础架构建设" type="string" />
+        <put-attribute name="header" value="/WEB-INF/views/template/head.jsp" />
+        <put-attribute name="header_css" value="" />
+        <put-attribute name="header_js" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/template/foot.jsp"/>
+        <put-attribute name="footer_js" value=""/>
+    </definition>
+
+    <definition name="index" extends="mainDefault">
+        <put-attribute name="header_css" value="/WEB-INF/views/index/index.css.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/index/index.jsp" />
+        <put-attribute name="footer_js" value="/WEB-INF/views/index/index.js.jsp"/>
+    </definition>
+
+
+
+
+</tiles-definitions>

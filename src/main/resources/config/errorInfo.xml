@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean id="commonErrors" class="com.test.utils.CommonErrors" scope="singleton">
+        <property name="errMsgs">
+            <map>
+                <entry key="000001" value="系统未知错误"/>
+                <entry key="200000" value="Invalid token"/>
+                <entry key="200001" value="Invalid token"/>
+                <entry key="200002" value="接口参数错误"/>
+                <entry key="200003" value="授权失败"/>
+                <entry key="200011" value="查询数据库错误"/>
+
+
+                <entry key="300002" value="上传图片失败"/>
+
+            </map>
+        </property>
+    </bean>
+</beans>

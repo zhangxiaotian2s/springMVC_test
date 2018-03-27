@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<!--强大的mybatis.generator插件自动生成 model（bean）， dao，  mapper -->
+
+<!--注意 每次重新执行插件时候 把已经生成的xml 文件删除-->
+
+<!--maven 数据-->
+<generatorConfiguration>
+	<!--指定本地mysql-connector-java-5.1.13.jar 路径-->
+	<classPathEntry location="C:\Users\张\.m2\repository\mysql\mysql-connector-java\5.1.13\mysql-connector-java-5.1.13.jar" />
+
+
+	<context id="context1">
+		<!-- 注释 -->
+		<commentGenerator >
+			<property name="suppressAllComments" value="true"/><!-- 是否取消注释 -->
+			<property name="suppressDate" value="true" /> <!-- 是否生成注释代时间戳-->
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+						connectionURL="jdbc:mysql://localhost:3306/mytest?useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true"
+						userId="root"
+						password="5211" />
+		<javaModelGenerator targetPackage="com.test.bean" targetProject="src/main/java" />
+		<sqlMapGenerator targetPackage="com.test.mapper" targetProject="src/main/java" />
+		<javaClientGenerator targetPackage="com.test.dao" targetProject="src/main/java" type="XMLMAPPER" />
+
+		<!--广告列表 对应数据库中的tb_ad表-->
+        <table tableName="tb_ad" ></table>
+
+	</context>
+</generatorConfiguration>

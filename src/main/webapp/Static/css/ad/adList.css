@@ -1,0 +1,13 @@
+.content{
+
+}
+.add-btn{
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size:0.3rem;
+    color: #FFFFFF;
+    line-height:0.8rem;
+    text-align: center;
+    background: #c0602b;
+}
