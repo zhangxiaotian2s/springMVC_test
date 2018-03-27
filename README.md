@@ -15,3 +15,5 @@
   `weight` int(11) NOT NULL COMMENT '权重',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8</p>
+
+<p>配合的前端项目https://github.com/zhangxiaotian2s/springMVC_test_vue</p>
